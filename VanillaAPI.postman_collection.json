@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "fcf6b808-994c-4722-b794-084139c7ab92",
+		"name": "VanillaAPI",
+		"description": "VanillaAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Widgets",
+			"item": [
+				{
+					"name": "Create  Widget",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "893BBEBD22192AA2800023EBCA73B62DBB5FEF258FA03E63C9DD7BF685847B67",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Sports 1\",\n    \"desc\": \"Sports news of the day 1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/widget/create",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"widget",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Widget Index",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "893BBEBD22192AA2800023EBCA73B62DBB5FEF258FA03E63C9DD7BF685847B67",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/widget",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"widget"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Widget Get By ID",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "token",
+								"value": "893BBEBD22192AA2800023EBCA73B62DBB5FEF258FA03E63C9DD7BF685847B67",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/widget/detail/12",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"widget",
+								"detail",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Widget delete By ID",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "893BBEBD22192AA2800023EBCA73B62DBB5FEF258FA03E63C9DD7BF685847B67",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/widget/delete/6",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"widget",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Widget Patch By ID",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "token",
+								"value": "893BBEBD22192AA2800023EBCA73B62DBB5FEF258FA03E63C9DD7BF685847B67",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/widget/update-name/7/Weather 2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"widget",
+								"update-name",
+								"7",
+								"Weather 2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
