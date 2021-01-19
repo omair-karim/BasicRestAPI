@@ -1,1 +1,2 @@
-Basic REST API in Laravel using HTTP Middleware
+# BasicRestAPI
+Basic REST API using middleware in Laravel
